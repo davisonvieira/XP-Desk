@@ -1,0 +1,65 @@
+/* Elementos de identidade */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: var(--ink);
+}
+
+.brand-mark {
+  display: grid;
+  grid-template-columns: repeat(2, 10px);
+  grid-template-rows: repeat(2, 10px);
+  gap: 2px;
+  width: 24px;
+  height: 24px;
+  transform: skewY(-8deg);
+}
+
+.brand-mark span {
+  display: block;
+  border-radius: 2px;
+  background: #f15b50;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.42);
+}
+
+.brand-mark span:nth-child(2) { background: #79b94a; }
+.brand-mark span:nth-child(3) { background: #3a8ddd; }
+.brand-mark span:nth-child(4) { background: #f3c348; }
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.brand-copy strong {
+  color: #15385f;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+}
+
+.brand-copy small {
+  margin-top: 3px;
+  color: #72849a;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.brand-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand-link:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 380px) {
+  .brand-copy strong { font-size: 13px; }
+  .brand-mark { transform: scale(0.88) skewY(-8deg); }
+}

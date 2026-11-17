@@ -1,0 +1,112 @@
+/* Estilos globais: variáveis, reset e classes compartilhadas entre páginas.
+   Estilos de cada componente ficam no .css ao lado do respectivo .tsx. */
+
+:root {
+  font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+  color: #172b45;
+  background: #eaf1f8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  --ink: #183453;
+  --muted: #6f8093;
+  --blue: #245edb;
+  --blue-dark: #1648a8;
+  --line: #dce5ee;
+  --surface: #ffffff;
+  --surface-soft: #f5f8fc;
+  --green: #27824b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  background:
+    radial-gradient(ellipse at 12% 8%, rgba(255, 255, 255, 0.9), transparent 34%),
+    linear-gradient(135deg, #e9f2fa 0%, #dbe9f6 54%, #eaf1f8 100%);
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid #1d5fc7;
+  outline-offset: 2px;
+}
+
+a {
+  color: #1457b8;
+}
+
+a:hover {
+  color: #0b3e8b;
+}
+
+/* Cabeçalho padrão das páginas internas (Dashboard, Projetos, Perfil, Detalhes) */
+
+.page-stack {
+  display: flex;
+  width: min(100%, 1120px);
+  flex-direction: column;
+  gap: 25px;
+  margin: 0 auto;
+}
+
+.page-heading-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.eyebrow {
+  color: #7390ad;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.35px;
+}
+
+.page-heading-row h1 {
+  margin: 3px 0 4px;
+  color: #183b60;
+  font-size: clamp(24px, 3vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+}
+
+.page-description {
+  margin: 0;
+  color: #7c8da0;
+  font-size: 11px;
+}
+
+@media (max-width: 640px) {
+  .page-stack {
+    gap: 19px;
+  }
+
+  .page-heading-row {
+    align-items: flex-start;
+  }
+}

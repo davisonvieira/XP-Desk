@@ -1,0 +1,127 @@
+/* Formulários de autenticação (usados no Login e no Cadastro) */
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.form-field label {
+  color: #304963;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.form-field input {
+  width: 100%;
+  min-height: 31px;
+  padding: 6px 9px;
+  color: #203b59;
+  font-size: 12px;
+}
+
+.form-field input::placeholder {
+  color: #9ba8b7;
+}
+
+.field-hint {
+  color: #8898a9;
+  font-size: 10px;
+}
+
+.password-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-field input {
+  padding-right: 76px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  min-height: 23px;
+  padding: 1px 7px;
+  transform: translateY(-50%);
+  border: 1px solid #c7d4e2;
+  border-radius: 3px;
+  background: linear-gradient(#fff, #eaf0f6);
+  color: #3d5e81;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.password-toggle:hover {
+  border-color: #8aaad0;
+  background: #f2f7fc;
+}
+
+.form-alert {
+  padding: 8px 10px;
+  border: 1px solid #e8b8b8;
+  border-radius: 3px;
+  background: #fff5f4;
+  color: #9c3434;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.form-separator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0 12px;
+  color: #a1adba;
+  font-size: 10px;
+}
+
+.form-separator::before,
+.form-separator::after {
+  height: 1px;
+  flex: 1;
+  background: #e5ebf1;
+  content: "";
+}
+
+.demo-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 33px;
+  border: 1px solid #b8cadf;
+  border-radius: 3px;
+  background: linear-gradient(#fff, #f0f5fa);
+  color: #315b86;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.demo-action:hover {
+  border-color: #82a8d2;
+  background: #f5f9fe;
+}
+
+.demo-action span {
+  color: #286ac6;
+  font-size: 15px;
+}
+
+.demo-hint {
+  margin: 8px 0 0;
+  color: #94a1af;
+  font-size: 9px;
+  text-align: center;
+}

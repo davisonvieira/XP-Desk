@@ -1,0 +1,72 @@
+.feature-card {
+  min-height: 174px;
+  padding: 17px 17px 16px;
+  border: 1px solid #dce5ee;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 2px 7px rgba(36, 74, 112, 0.035);
+}
+
+.feature-card--ready {
+  border-color: #c9e3d2;
+}
+
+.feature-icon {
+  display: grid;
+  width: 31px;
+  height: 31px;
+  margin-bottom: 13px;
+  place-items: center;
+  border: 1px solid #cce4d4;
+  border-radius: 5px;
+  background: #eef8f1;
+  color: #2a8a4b;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.feature-icon--blue {
+  border-color: #cbdcf0;
+  background: #eff6ff;
+  color: #397ac0;
+}
+
+.feature-icon--purple {
+  border-color: #d8d4ef;
+  background: #f4f2ff;
+  color: #7265bd;
+}
+
+.feature-state {
+  color: #8496a8;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.65px;
+}
+
+.feature-card--ready .feature-state { color: #388356; }
+
+.feature-card h3 {
+  margin: 5px 0 5px;
+  color: #294967;
+  font-size: 13px;
+}
+
+.feature-card p {
+  margin: 0;
+  color: #8292a3;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .feature-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .feature-card {
+    padding: 14px;
+  }
+}

@@ -1,0 +1,11 @@
+.register-form {
+  gap: 10px;
+}
+
+.register-form .form-field input {
+  min-height: 29px;
+}
+
+.register-form .primary-action {
+  margin-top: 4px;
+}

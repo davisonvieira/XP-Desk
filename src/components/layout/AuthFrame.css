@@ -1,0 +1,137 @@
+/* Moldura das telas de login e cadastro. .auth-window também é usada pelo Modal. */
+
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 27px clamp(18px, 5vw, 72px) 18px;
+}
+
+.auth-topline,
+.auth-bottomline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.version-label,
+.auth-bottomline {
+  color: #8092a5;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.15px;
+}
+
+.auth-center {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 42px 0 50px;
+}
+
+.auth-window {
+  width: min(100%, 456px);
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 0 18px 50px rgba(49, 83, 121, 0.17), 0 2px 8px rgba(30, 67, 108, 0.1);
+}
+
+.auth-window .title-bar {
+  min-height: 30px;
+  padding: 5px 8px 5px 10px;
+}
+
+.auth-window .title-bar-text {
+  font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.auth-window-body {
+  padding: 28px 32px 23px;
+  background: #fff;
+}
+
+.auth-heading {
+  margin-bottom: 22px;
+}
+
+.auth-kicker {
+  color: #4774a8;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.35px;
+}
+
+.auth-heading h1 {
+  margin: 7px 0 5px;
+  color: #15385f;
+  font-size: clamp(22px, 4vw, 27px);
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+}
+
+.auth-heading p {
+  margin: 0;
+  color: #718196;
+  font-size: 12px;
+}
+
+.auth-footer {
+  margin-top: 21px;
+  padding-top: 15px;
+  border-top: 1px solid #edf1f5;
+  color: #8795a4;
+  font-size: 11px;
+  text-align: center;
+}
+
+.auth-footer a {
+  color: #1d5fb7;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.auth-footer a:hover { text-decoration: underline; }
+
+.auth-disclaimer {
+  max-width: 480px;
+  margin: 12px 0 0;
+  color: #8697a9;
+  font-size: 10px;
+  text-align: center;
+}
+
+.auth-bottomline {
+  padding-top: 13px;
+  border-top: 1px solid rgba(143, 166, 190, 0.26);
+  font-size: 9px;
+}
+
+@media (max-width: 640px) {
+  .auth-page {
+    padding: 18px 14px 14px;
+  }
+
+  .version-label {
+    max-width: 125px;
+    font-size: 8px;
+    text-align: right;
+  }
+
+  .auth-center {
+    padding: 32px 0;
+  }
+
+  .auth-window-body {
+    padding: 23px 20px 19px;
+  }
+
+  .auth-bottomline {
+    font-size: 8px;
+  }
+}
