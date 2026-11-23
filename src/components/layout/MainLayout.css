@@ -1,17 +1,17 @@
 .app-page {
   min-height: 100vh;
-  background: #f2f6fa;
+  background: linear-gradient(180deg, #e3ecfa 0%, #cfdff5 100%);
 }
 
 .app-layout {
   display: grid;
   min-height: calc(100vh - 66px);
-  grid-template-columns: 226px minmax(0, 1fr);
+  grid-template-columns: 266px minmax(0, 1fr);
 }
 
 .app-main {
   min-width: 0;
-  padding: clamp(24px, 4vw, 47px) clamp(20px, 4vw, 56px) 56px;
+  padding: clamp(24px, 4vw, 57px) clamp(20px, 4vw, 58px) 56px;
 }
 
 @media (max-width: 900px) {
